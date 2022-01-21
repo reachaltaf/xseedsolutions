@@ -1,0 +1,367 @@
+body{margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: rgb(255, 255, 255);
+
+}
+*{
+box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+  align-items: center;
+  width: 100%;
+    border: 3px solid rgba(0,0,0,0.04);
+    background-color: white;
+}
+.logo img{
+    height: 70px;
+    margin-top: 20px;
+}
+nav .menu{
+    display: flex;
+}
+nav .menu  li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 0px;
+    padding: 0px 70px;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+   letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+   
+    
+
+
+}
+nav .menu .active a{
+    background-color: rgb(218, 201, 201);
+}
+
+
+
+nav .menu li a:hover{
+    background-color: rgb(218, 201, 201);
+    color: rgb(179, 44, 44);
+    box-shadow: 5px 10px 30px rgba(191, 13, 13, 0.1);
+    transition: all ease 0.2s;
+    
+}
+.content h2 {
+    color: rgb(0, 0, 0);
+    color: red;
+    
+    display: block;
+    font-family: Lato;
+
+    line-height: 1.4em;
+    
+    font-weight: 5;
+    font-style: normal;
+    font-size: 1.01em
+}
+
+.content h1 {
+    color: rgb(172, 22, 22);
+    display: block;
+    font-family: Lato;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.9em
+}
+.content h1  span{
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: Lato;
+    text-transform: uppercase;
+    
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redbtn ul li {
+    --c: rgb(165, 14, 14);
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+.redbtn ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.redbtn ul li:hover {
+    color: black;
+}
+
+.redbtn ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.redbtn ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+.redbtn ul li span:nth-child(3) {
+    --n: 3;
+}
+
+.redbtn ul li span:nth-child(4) {
+    --n: 4;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #aa0404;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Dropdown Button */
+.dropbtn {
+    background-color: #c20000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+*{
+  
+    margin-left: 1px;
+    
+    text-align: center;
+}
+  nav{
+    display: flex;
+    justify-content: space-between;
+  align-items: left;
+  width: 100%;
+    border: 5px solid rgba(0,0,0,0.04);
+    background-color: white;
+
+}
+.logo img{
+    height: 99px;
+    margin-top: 20px;
+    margin-left: 60px;
+
+
+}
+nav .menu{
+    display: none;
+    
+
+
+  }
+
+
+    .content h2 {
+    color: rgb(0, 0, 0);
+    
+    display: block;
+    font-family: Lato;
+
+    line-height: 1.4em;
+    
+    font-weight: 5;
+    font-style: normal;
+    font-size: 1.01em
+
+}
+
+.content h1 {
+    color: rgb(172, 22, 22);
+    display: block;
+    font-family: Lato;
+    text-transform: uppercase;
+    line-height: 0.3em;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.9em
+}
+
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }    
+
+.container {
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    padding: 11px;
+    margin-right: 0px;
+
+  }
+ 
+
+
